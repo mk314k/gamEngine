@@ -1,0 +1,22 @@
+MainWindow:
+
+<MainWindow>:
+    orientation: 'vertical'
+
+<Menu>:
+    size_hint: 1, None
+    height: 50
+    pos_hint: {'top': 1 }
+
+<ToolBox>:
+    size_hint: None, 1
+    width: 100
+
+<DragButton>:
+    drag_rectangle: self.x, self.y, self.width, self.height
+    drag_timeout: 10000000
+    drag_distance: 0
+
+<StatusBar>:
+    size_hint: 1, None
+    height: 50
